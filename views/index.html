@@ -23,7 +23,7 @@
     <div class="container" ng-controller="PokemonAppController as pokemonCtrl">
         <!-- <div ng-init="pokemonCtrl" class=""> -->
 
-        <div ng-repeat="poke in pokemonCtrl.pokemon">
+        <div ng-repeat="poke in pokemonCtrl.pokemon" class="poke">
           <h4><a href="https://super-crud.herokuapp.com/pokemon/{{poke._id}}">{{poke.name}}</a></h4>
             <img src="{{poke.image}}"><br>
             <button class='btn btn-danger'  ng-click="pokemonCtrl.deletePoke(poke._id)">Delete Poke</button>
